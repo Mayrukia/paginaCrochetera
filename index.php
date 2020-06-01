@@ -30,7 +30,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-6 text-center">
+				<div class="col-6 text-center bg-drak">
 					<p>Los pies</p>
 				</div>
 			</div>
