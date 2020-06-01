@@ -8,7 +8,7 @@
 </head>
 <body>   
 
-	hola
+	<h1 class="bg-primary">Hola mariano</h1>
 	<!-- Navbar -->
 	<!-- Navbar fin -->
 
@@ -41,8 +41,6 @@
 	<!-- footer fin-->
 </body>
 <!-- JS, Popper.js, and jQuery -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script src="js/vue.min.js"></script>
 <script src="js/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
