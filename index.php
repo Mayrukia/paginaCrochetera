@@ -11,21 +11,31 @@
 	<!-- Navbar fin -->
 
 
-	<!-- Slider -->	
-	<!-- Slider fin-->	
+	<!-- Slider -->
+	<!-- Slider fin-->
 
 
 	<!-- Mi Presentacion -->
 	<!-- Mi Presentacion fin-->
 
 	<!-- Show Productos -->
+
 	<!-- Show Productos End-->
 
 
 	<!-- Redes -->
-	<!-- Redes End-->	
-	
+	<!-- Redes End-->
+
 	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-6 text-center">
+					<p>Los pies</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<!-- footer fin-->
 </body>
 <!-- JS, Popper.js, and jQuery -->
