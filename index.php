@@ -6,7 +6,9 @@
 <head>
 	<title></title>
 </head>
-<body>
+<body>   
+
+	hola
 	<!-- Navbar -->
 	<!-- Navbar fin -->
 
