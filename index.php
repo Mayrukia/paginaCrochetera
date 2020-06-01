@@ -2,11 +2,13 @@
 <html>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" href="css/styles.css">
-<!-- carpeta de imagen    /images -->
+<!-- carpeta de img    /img -->
 <head>
 	<title></title>
 </head>
 <body>
+
+	<h1 class="bg-primary">Hola mariano</h1>
 	<!-- Navbar -->
 	<!-- Navbar fin -->
 
@@ -39,8 +41,6 @@
 	<!-- footer fin-->
 </body>
 <!-- JS, Popper.js, and jQuery -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script src="js/vue.min.js"></script>
 <script src="js/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
