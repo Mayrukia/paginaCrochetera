@@ -11,11 +11,11 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
-<!-- carpeta de imagen    /images -->
+<!-- carpeta de img    /img -->
 <head>
 	<title></title>
 </head>
-<body>   
+<body>
 
 	
 
