@@ -29,7 +29,16 @@
 	</div>
 
 	<!-- Show Productos End-->
-
+	<div v-for="producto in filtrados">
+		<div class="menu-item">
+      <div class="img-prod">
+          <div class="icon-img-prod"></div>
+          <img class="img-thumbnail" loading="lazy" :src="`images/${producto.id}.jpg`">
+      </div>
+      <div class="nom-prod">{{producto.nombre}}</div>
+      <div class="precio-prod">${{producto.precio}}</div>
+  </div>
+	</div>
 
 	<!-- Redes -->
 	<!-- Redes End-->
