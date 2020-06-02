@@ -15,7 +15,7 @@ var app = new Vue({
 
 	methods: {
         getAllProductos: function () {
-			axios.get('http://localhost/DeOtros/paginaCrochetera/api/v1.php?action=read')
+			axios.get('http://localhost/paginaCrochetera/api/v1.php?action=read')
 			.then(function (response) {
 				console.log(response);
 				if (response.data.error) {
