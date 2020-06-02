@@ -7,43 +7,42 @@
 	<title></title>
 </head>
 <body>   
-
-	hola
-	<!-- Navbar -->
-	<!-- Navbar fin -->
-
-
-	<!-- Slider -->
-	<!-- Slider fin-->
+	<div id="root">
+		hola
+		<!-- Navbar -->
+		<!-- Navbar fin -->
 
 
-	<!-- Mi Presentacion -->
-	<!-- Mi Presentacion fin-->
-
-	<!-- Show Productos -->
-
-	<!-- Show Productos End-->
+		<!-- Slider -->
+		<!-- Slider fin-->
 
 
-	<!-- Redes -->
-	<!-- Redes End-->
+		<!-- Mi Presentacion -->
+		<!-- Mi Presentacion fin-->
 
-	<!-- footer -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-6 text-center">
-					<p>Los pies</p>
+		<!-- Show Productos -->
+
+		<!-- Show Productos End-->
+
+
+		<!-- Redes -->
+		<!-- Redes End-->
+
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-6 text-center">
+						<p>Los pies</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<!-- footer fin-->
+		</footer>
+		<!-- footer fin-->
+	</div>
 </body>
 <!-- JS, Popper.js, and jQuery -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="js/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

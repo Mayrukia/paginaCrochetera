@@ -2,11 +2,11 @@ var app = new Vue({
 
 	el: "#root",
 	data: {
-
+        algo: "algo"
     },
 
     mounted: function () {
-        console.log("Vue running...");
+        console.log(this.algo);
 	},
 
 	methods: {
