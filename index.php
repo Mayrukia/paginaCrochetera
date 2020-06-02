@@ -7,8 +7,6 @@
 	<title></title>
 </head>
 <body>
-
-	<h1 class="bg-primary">Hola mariano</h1>
 	<!-- Navbar -->
 	<!-- Navbar fin -->
 
@@ -21,24 +19,28 @@
 	<!-- Mi Presentacion fin-->
 
 	<!-- Show Productos -->
-	<div class="v-for">
-		<div class="">
-
+	<div class="" id="root">
+		<div class="bg-warning">
+			<p class="text-center">sin vuejs</p>
+			{{filtrados
+		<div class="bg-success">
+			<p class="text-center">Lista de productos</p>
 		</div>
-
+		<br>
+		<div v-for="producto in filtrados">
+			<div class="menu-item">
+				<div class="img-prod">
+						<div class="icon-img-prod"></div>
+						<img class="img-thumbnail" loading="lazy" :src="`images/${producto.id}.jpg`">
+				</div>
+				<div class="nom-prod">{{producto.nombre}}</div>
+				<div class="precio-prod">${{producto.precio}}</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Show Productos End-->
-	<div v-for="producto in filtrados">
-		<div class="menu-item">
-      <div class="img-prod">
-          <div class="icon-img-prod"></div>
-          <img class="img-thumbnail" loading="lazy" :src="`images/${producto.id}.jpg`">
-      </div>
-      <div class="nom-prod">{{producto.nombre}}</div>
-      <div class="precio-prod">${{producto.precio}}</div>
-  </div>
-	</div>
+
 
 	<!-- Redes -->
 	<!-- Redes End-->
@@ -48,7 +50,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-6 text-center bg-drak">
-					<p>Los pies</p>
+
 				</div>
 			</div>
 		</div>
@@ -56,7 +58,7 @@
 	<!-- footer fin-->
 </body>
 <!-- JS, Popper.js, and jQuery -->
-<script src="js/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="js/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
