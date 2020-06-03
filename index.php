@@ -49,25 +49,20 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-							<div v-if="producto in productos" class="col-md-3">
-								<div class="card">
+							<div class="col-md-3">
+								<div v-for="producto in productos" class="card">
 										<div class="card-title">
 											{{producto.nombre}}
 										</div>
 										<div class="card-body">
-
 										</div>
 										<div class="card-footer">
-
 										</div>
 								</div>
-
 							</div>
 					</div>
-
 				</div>
 			</div>
-
 	</div>
 
 	<!-- Slider fin-->
