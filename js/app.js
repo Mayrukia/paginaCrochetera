@@ -2,7 +2,7 @@ var app = new Vue({
 
 	el: "#root",
 	data: {
-        errorMessage: "",
+    errorMessage: "",
 		successMessage: "",
 		productos: [],
 		filtrados:[],
