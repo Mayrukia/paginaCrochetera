@@ -108,9 +108,6 @@
 
 	// }
 
-
-
-
 	// Close database connection
 	$conn->close();
 
