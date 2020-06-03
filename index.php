@@ -22,19 +22,19 @@
 	<div class="" id="root">
 		<div class="bg-warning">
 			<p class="text-center">sin vuejs</p>
-			{{filtrados
+			{{productos}}
 		<div class="bg-success">
 			<p class="text-center">Lista de productos</p>
 		</div>
 		<br>
-		<div v-for="producto in filtrados">
+		<div v-for="productos in filtrados">
 			<div class="menu-item">
 				<div class="img-prod">
 						<div class="icon-img-prod"></div>
-						<img class="img-thumbnail" loading="lazy" :src="`images/${producto.id}.jpg`">
+						<img class="img-thumbnail" loading="lazy" :src="`images/${productos.id}.jpg`">
 				</div>
-				<div class="nom-prod">{{producto.nombre}}</div>
-				<div class="precio-prod">${{producto.precio}}</div>
+				<div class="nom-prod">{{productos.nombre}}</div>
+				<div class="precio-prod">${{productos.precio}}</div>
 			</div>
 		</div>
 	</div>
@@ -58,9 +58,10 @@
 	<!-- footer fin-->
 </body>
 <!-- JS, Popper.js, and jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-<script src="js/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="js/app.js"></script>
 </html>
