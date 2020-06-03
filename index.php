@@ -17,8 +17,18 @@
 </head>
 <body>
 
+
 	
 
+ <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="assets/img/logo.png" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -50,7 +60,15 @@
     </div>
   </header><!-- End Header -->
 
-	<!-- Navbar -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Bienvenidos a la pagina Crochetera </h1>
+      <h2> agregar descripcion</h2>
+      <a href="#about" class="btn-get-started">Empezar</a>
+    </div>
+  </section>
+  <!-- End Hero Section -->
 	<!-- Navbar fin -->
 
 
@@ -91,14 +109,33 @@
 
         </div>
 
-      </div>
-    </section>
+     
 
     <!-- End mariano -->
 	<!-- Mi Presentacion fin-->
 
 	<!-- Show Productos -->
-
+	<div class="" id="root">
+		<div class="bg-warning">
+			<p class="text-center">sin vuejs</p>
+	
+		<div class="bg-success">
+			<p class="text-center">Lista de productos</p>
+		</div>
+		<br>
+		<div v-for="producto in filtrados">
+			<div class="menu-item">
+				<div class="img-prod">
+						<div class="icon-img-prod"></div>
+						<img class="img-thumbnail" loading="lazy" :src="`images/${producto.id}.jpg`">
+				</div>
+				<div class="nom-prod">{{producto.nombre}}</div>
+				<div class="precio-prod">${{producto.precio}}</div>
+			</div>
+		</div>
+	</div>
+ </div>
+    </section>
 	<!-- Show Productos End-->
 
 
@@ -109,8 +146,13 @@
 	<footer>
 		<div class="container">
 			<div class="row">
+
 				<div class="col-6 text-center">
 					<p></p>
+
+				<div class="col-6 text-center bg-drak">
+
+
 				</div>
 			</div>
 		</div>
@@ -118,7 +160,7 @@
 	<!-- footer fin-->
 </body>
 <!-- JS, Popper.js, and jQuery -->
-<script src="js/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="js/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
