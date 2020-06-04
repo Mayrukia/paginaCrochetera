@@ -1,15 +1,10 @@
 <?php
 	// Content Type JSON
 	header("Content-type: application/json");
-	// Database connection
-	$conn = new mysqli("localhost", "root", "", "todocrocheting");
-	if ($conn->connect_error) {
-		die("No se pudo conectar con la base de datos");
-	}
-	$res = array('error' => false);
-
-
-	// Read data from database
+	 $connect= new PDO('mysql:host=localhost;dbname=todoCrocheting','root','');
+    $sql = 'SELECT * FROM producto';
+    $tabla = $connect->query($sql);
+    $productos= $tabla->fetchAll(PDO::FETCH_OBJ);
 	$action = 'read';
 
 	if (isset($_GET['action'])) {
