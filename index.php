@@ -46,6 +46,7 @@
 	<!-- Navbar fin -->
 	<!-- Slider -->
 	<div class="" id="root">
+<<<<<<< HEAD
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -61,6 +62,19 @@
 								</div>
 							</div>
 					</div>
+=======
+		<div class="bg-warning">
+			<p class="text-center">sin vuejs</p>
+		<div class="bg-success">
+			<p class="text-center">Lista de productos</p>
+		</div>
+		<br>
+		<div v-for="productos in filtrados">
+			<div class="menu-item">
+				<div class="img-prod">
+						<div class="icon-img-prod"></div>
+						<img class="img-thumbnail" loading="lazy" :src="`images/${productos.id}.jpg`">
+>>>>>>> develop
 				</div>
 			</div>
 	</div>
