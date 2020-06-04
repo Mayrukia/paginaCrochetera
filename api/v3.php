@@ -4,7 +4,7 @@
 	// Database connection
 	$pdo= new PDO('mysql:host=localhost;dbname=todoCrocheting','root','');
     $pdo->exec("set names utf8");
-    
+
 	// Read data from database
 	$action = 'read';
 
@@ -15,9 +15,9 @@
 	if ($action == 'read') {
 		$tabla = $pdo->prepare('SELECT * FROM producto');
     	$tabla->execute();
-		
 
-    	$productos = $tabla->fetchAll(PDO::FETCH_ASSOC);		
+
+    	$productos = $tabla->fetchAll(PDO::FETCH_ASSOC);
 		$res['productos'] = $productos;
 
 	}
