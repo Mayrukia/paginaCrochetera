@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 	// Content Type JSON
 	header("Content-type: application/json");
 	// Database connection
@@ -28,3 +29,12 @@
 	echo json_encode($res);
 	die();
 ?>
+=======
+   
+    // $conect->close();
+    $connect = null;
+    var_dump($productos);
+    return $productos;
+
+?>
+>>>>>>> mariano
