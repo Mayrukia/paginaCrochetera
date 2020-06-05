@@ -98,7 +98,7 @@
 	<div class="" id="root">
 		<div class="bg-warning">
 			<p class="text-center">sin vuejs</p>
-
+        {{productos}}
 		<div class="bg-success">
 			<p class="text-center">Lista de productos</p>
 		</div>
