@@ -25,7 +25,8 @@
 		$precio = $_POST['precio'];
 		$categoria = $_POST['categoria'];
 		$descripcion = $_POST['descripcion'];
-		$tabla = $pdo->prepare('');
+		$tabla = $pdo->prepare('INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precioUnitario`, `visible`, `idCategoria`)
+														VALUES ('',$nombre, $descripcion, $precio, '', $categoria);');
     $tabla->execute();
 		$result = $tabla->fetchAll(PDO::FETCH_ASSOC);
 		if ($result) {
@@ -33,7 +34,7 @@
 		} else {
 			$res['error']   = true;
 			$res['message'] = "Error al insertar el producto";
-		}
+		} 
 	}
 
 	// Parte de las Categorias
