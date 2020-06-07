@@ -9,7 +9,7 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 <!-- carpeta de img    /img -->
 <head>
 	<title></title>
@@ -28,7 +28,7 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">Sobre nosotros</a></li>
           <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="productos.php">Productos</a></li>
           <li><a href="#team">Equipo</a></li>
           <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
@@ -56,8 +56,8 @@
   <section id="hero">
     <div class="hero-container">
       <h1>Bienvenidos a la pagina Crochetera </h1>
-      <h2> agregar descripcion</h2>
-      <a href="#about" class="btn-get-started">Empezar</a>
+      <h2>volve</h2>
+      <a href="#galeria" class="btn-get-started">Empezar</a>
     </div>
   </section>
   <!-- End Hero Section -->
@@ -65,54 +65,79 @@
 	<!-- Slider -->
 	<!-- Slider fin-->
 	<!-- Mi Presentacion -->
-	 <!-- ======= inicio mariano ======= -->
-    <section id="facts">
-      <div class="container wow fadeIn">
-        <div class="section-header">
-          <h3 class="section-title">Galeria de productos</h3>
-          <p class="section-description">txt/img</p>
-        </div>
-        <div class="row counters">
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">txt/img</span>
-            <p>Productos</p>
-          </div>
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">txt img</span>
-            <p>Categoria</p>
-          </div>
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">txt img</span>
-            <p>Colores</p>
-          </div>
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">txt img</span>
-            <p>Trabajadores/as</p>
-          </div>
-        </div>
-    <!-- End mariano -->
+	<div class="container text-center">
+    <div class="">
+      <div class="col-md-10 p-3 bg-warning m-3" >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore amet, fugit rerum id veniam maxime expedita, perferendis, velit quisquam fugiat a ipsum ad molestias officiis, animi sed illo. Quae, iusto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti veniam molestias dolore rem autem temporibus, corporis dolorum culpa adipisci ipsum! Laudantium id est commodi aut assumenda, consequuntur ad accusantium quidem?</p>
+      </div>
+    </div>
+  </div>
 	<!-- Mi Presentacion fin-->
 	<!-- Show Productos -->
-	<div class="" id="root">
-    <div class="container
-        <p class="text-center text-dark display-4">Lista de categorias</p>
-        <div class="justify-content-center text-center">
-          <p v-for="categoria in categorias" class="btn btn-success text-center p-2 m-2">{{categoria.nombre}}</p>
-
+  <section>
+  <div class="row counters p-4">
+    <div class="col-lg-3 col-6 text-center">
+      <div class="card bg-dark">
+        <div class="card-title">Monedero </div>
+        <div class="card-img"><img src="img/Decoracion/6.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
+        <div class="card-footer">Precio $700</div>
       </div>
-		<div class="">
-			<p class="text-center text-dark display-4">Lista de productos</p>
-		</div>
-		<div v-for="producto in filtrados" class="col-lg-3 col-6 text-center">
-      <div class="card">
+    </div>
+    <div class="col-lg-3 col-6 text-center">
+      <div class="card bg-success">
         <div class="card-title">{{producto.nombre}}</div>
-        <div class="card-img"><img class="img-thumbnail" loading="lazy" :src="`images/${producto.id}.jpg`"></div>
+        <div class="card-img"><<img src="img/Decoracion/3.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
         <div class="card-footer">Precio ${{producto.precio}}</div>
       </div>
-		</div>
-	</div>
- </div>
-    </section>
+    </div>
+    <div class="col-lg-3 col-6 text-center">
+      <div class="card">
+        <div class="card-title">{{producto.nombre}}</div>
+        <div class="card-img"><img src="img/Decoracion/2.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
+        <div class="card-footer">Precio ${{producto.precio}}</div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="col-lg-3 col-6 text-center">
+      <div class="card bg-info">
+        <div class="card-title">{{producto.nombre}}</div>
+        <div class="card-img"><img src="img/Decoracion/1.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
+        <div class="card-footer">Precio ${{producto.precio}}</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-6 text-center">
+      <div class="card bg-info">
+        <div class="card-title">Monedero </div>
+        <div class="card-img"><img src="img/Decoracion/6.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
+        <div class="card-footer">Precio $700</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-6 text-center">
+      <div class="card">
+        <div class="card-title">{{producto.nombre}}</div>
+        <div class="card-img"><<img src="img/Decoracion/3.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
+        <div class="card-footer">Precio ${{producto.precio}}</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-6 text-center">
+      <div class="card bg-success">
+        <div class="card-title">{{producto.nombre}}</div>
+        <div class="card-img"><img src="img/Decoracion/7.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
+        <div class="card-footer">Precio ${{producto.precio}}</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-6 text-center">
+      <div class="card bg-dark">
+        <div class="card-title">{{producto.nombre}}</div>
+        <div class="card-img"><img src="img/Decoracion/8.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
+        <div class="card-footer">Precio ${{producto.precio}}</div>
+      </div>
+    </div>
+  </div>
+  </section>
 	<!-- Show Productos End-->
 	<!-- Redes -->
 	<!-- Redes End-->
@@ -120,9 +145,12 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-6 text-center">
+				<div class="col-6 text-center ">
 					<p></p>
-				<div class="col-6 text-center bg-drak">
+          <br>
+        </div>
+				<div class="col-md-12 bg-dark">
+          <p class="text-center">noseve</p>
 				</div>
 			</div>
 		</div>
