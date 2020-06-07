@@ -16,7 +16,7 @@ var app = new Vue({
 
 	methods: {
 		getAllProductos: function () {
-  		axios.get('http://localhost/Vuejs/SerafinaVue/api/v3.php?action=read')
+  		axios.get('http://localhost/paginaCrochetera/api/v3.php?action=read')
   		.then(function (response) {
   			if (response.data.error) {
   				app.errorMessage = response.data.message;
