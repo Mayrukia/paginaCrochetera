@@ -94,21 +94,21 @@
 	<!-- Mi Presentacion fin-->
 	<!-- Show Productos -->
 	<div class="" id="root">
-		<div class="bg-warning">
-			<p class="text-center">sin vuejs</p>
-		<div class="bg-success">
-			<p class="text-center">Lista de productos</p>
+    <div class="container
+        <p class="text-center text-dark display-4">Lista de categorias</p>
+        <div class="justify-content-center text-center">
+          <p v-for="categoria in categorias" class="btn btn-success text-center p-2 m-2">{{categoria.nombre}}</p>
+
+      </div>
+		<div class="">
+			<p class="text-center text-dark display-4">Lista de productos</p>
 		</div>
-		<br>
-		<div v-for="producto in filtrados">
-			<div class="menu-item">
-				<div class="img-prod">
-						<div class="icon-img-prod"></div>
-						<img class="img-thumbnail" loading="lazy" :src="`images/${producto.id}.jpg`">
-				</div>
-				<div class="nom-prod">{{producto.nombre}}</div>
-				<div class="precio-prod">${{producto.precio}}</div>
-			</div>
+		<div v-for="producto in filtrados" class="col-lg-3 col-6 text-center">
+      <div class="card">
+        <div class="card-title">{{producto.nombre}}</div>
+        <div class="card-img"><img class="img-thumbnail" loading="lazy" :src="`images/${producto.id}.jpg`"></div>
+        <div class="card-footer">Precio ${{producto.precio}}</div>
+      </div>
 		</div>
 	</div>
  </div>
@@ -130,10 +130,6 @@
 	<!-- footer fin-->
 </body>
 <!-- JS, Popper.js, and jQuery -->
-<<<<<<< HEAD
-=======
-
->>>>>>> eduvue
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

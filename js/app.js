@@ -6,6 +6,7 @@ var app = new Vue({
 		successMessage: "",
 		productos: [],
 		filtrados:[],
+		categorias:[],
     },
 
     mounted: function () {
@@ -91,7 +92,7 @@ var app = new Vue({
 	// CATEGORIAS
 
 	getAllCategorias: function () {
-		axios.get('http://localhost/paginaCrochetera/api/v1.php?action=readcat')
+		axios.get('http://localhost/paginaCrochetera/api/v3.php?action=readCat')
 		.then(function (response) {
 			if (response.data.error) {
 				app.errorMessage = response.data.message;
