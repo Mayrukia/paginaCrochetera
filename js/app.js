@@ -1,60 +1,22 @@
 var app = new Vue({
 
-el: "#root",
-data: {
-	showingaddModal: false,
-	showingeditModal: false,
-	showingdeleteModal: false,
-	showLogin:true,
-	showAdmin:false,
-	errorMessage: "",
-	successMessage: "",
-	productos: [],
-	filtrados:[],
-	newProd: {nombre: "", precio: "", categoria: "", descripcion: ""},
-	clickedProd: {},
-	categorias: [],
-	carrito: [],
-},
+	el: "#root",
+	data: {
+    errorMessage: "",
+		successMessage: "",
+		productos: [],
+		filtrados:[],
+    },
 
-mounted: function () {
-	this.getAllProductos();
-	this.getAllCategorias();
-},
-
-methods: {
-
-	addCarProd: function (prod) {
-		if (this.carrito.includes(prod)) {
-		  this.pos = this.carrito.indexOf(prod);
-		  prod.cant = prod.cant+1;
-		  this.carrito.splice(this.pos, 1,prod);
-		}else{
-		  prod.cant = 1;
-		  this.carrito.push(prod);
-		}
+    mounted: function () {
+        console.log("running");
+        this.getAllProductos();
+				this.getAllCategorias();
 	},
 
-	sumarCarrito: function (prod) {
-		this.pos = this.carrito.indexOf(prod);
-		prod.cant = prod.cant+1;
-		this.carrito.splice(this.pos, 1,prod);
-	},
-
-	restarCarrito: function (prod) {
-		this.pos = this.carrito.indexOf(prod);
-		if ((prod.cant - 1) != 0) {
-			prod.cant = prod.cant-1;
-			this.carrito.splice(this.pos, 1,prod);
-		}
-	},
-
-	deleteCarProd: function (index) {
-        this.carrito.splice(index, 1);
-	},
-
-  	getAllProductos: function () {
-  		axios.get('http://localhost/paginaCrochetera/api/v1.php?action=read')
+	methods: {
+		getAllProductos: function () {
+  		axios.get('http://localhost/paginaCrochetera/api/v3.php?action=read')
   		.then(function (response) {
   			if (response.data.error) {
   				app.errorMessage = response.data.message;
