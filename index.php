@@ -51,7 +51,12 @@
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
+
+	<!-- Navbar fin -->
+
+	<!-- Slider -->
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
@@ -61,9 +66,8 @@
     </div>
   </section>
   <!-- End Hero Section -->
-	<!-- Navbar fin -->
-	<!-- Slider -->
 	<!-- Slider fin-->
+
 	<!-- Mi Presentacion -->
 	<div class="container text-center">
     <div class="">
@@ -75,65 +79,21 @@
 	<!-- Mi Presentacion fin-->
 	<!-- Show Productos -->
   <section>
-  <div class="row counters p-4">
-    <div class="col-lg-3 col-6 text-center">
-      <div class="card bg-dark">
-        <div class="card-title">Monedero </div>
-        <div class="card-img"><img src="img/Decoracion/6.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
-        <div class="card-footer">Precio $700</div>
+  <div class="" id="root">
+    <div class="container">
+      <div class="row" v-for="categoria in categorias">
+        <p class="btn btn-success">
+        {{categoria.nombre}}
+        </p
       </div>
     </div>
-    <div class="col-lg-3 col-6 text-center">
-      <div class="card bg-success">
-        <div class="card-title">{{producto.nombre}}</div>
-        <div class="card-img"><<img src="img/Decoracion/3.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
-        <div class="card-footer">Precio ${{producto.precio}}</div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-6 text-center">
-      <div class="card">
-        <div class="card-title">{{producto.nombre}}</div>
-        <div class="card-img"><img src="img/Decoracion/2.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
-        <div class="card-footer">Precio ${{producto.precio}}</div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="col-lg-3 col-6 text-center">
-      <div class="card bg-info">
-        <div class="card-title">{{producto.nombre}}</div>
-        <div class="card-img"><img src="img/Decoracion/1.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
-        <div class="card-footer">Precio ${{producto.precio}}</div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-6 text-center">
-      <div class="card bg-info">
-        <div class="card-title">Monedero </div>
-        <div class="card-img"><img src="img/Decoracion/6.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
-        <div class="card-footer">Precio $700</div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-6 text-center">
-      <div class="card">
-        <div class="card-title">{{producto.nombre}}</div>
-        <div class="card-img"><<img src="img/Decoracion/3.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
-        <div class="card-footer">Precio ${{producto.precio}}</div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-6 text-center">
-      <div class="card bg-success">
-        <div class="card-title">{{producto.nombre}}</div>
-        <div class="card-img"><img src="img/Decoracion/7.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
-        <div class="card-footer">Precio ${{producto.precio}}</div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-6 text-center">
-      <div class="card bg-dark">
-        <div class="card-title">{{producto.nombre}}</div>
-        <div class="card-img"><img src="img/Decoracion/8.jpg" width="200px" height="200px" class="img-rounded center-block"></div>
-        <div class="card-footer">Precio ${{producto.precio}}</div>
+    <div class="row counters p-4">
+      <div class="col-lg-3 col-6 text-center">
+        <div v-for="producto in filtrados" class="card bg-dark">
+          <div class="card-title">{{producto.nombre}}</div>
+          <img :src="`img/${producto.id}.jpg`" alt="" height="60">
+          <div class="card-footer">Precio {{producto.precio}}</div>
+        </div>
       </div>
     </div>
   </div>
