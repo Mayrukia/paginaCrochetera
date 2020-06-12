@@ -34,19 +34,13 @@
           <li><a href="#team">Equipo</a></li>
           <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
+              <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul >
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                <ul>
+                  <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+              
             </ul>
           </li>
           <li><a href="#contact">Contactos</a></li>
@@ -125,6 +119,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/categorias.vue.js"></script>
 </body>
 
 

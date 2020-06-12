@@ -1,26 +1,27 @@
 var Categorias = new Vue({
 
-	el: "#app-categorias",
+	el: "#header",
 	data: {
         errorMessage: "",
         successMessage: "",
-        categorias: [],
+        categoria: [],
+        algo: "algo"
     },
 
     mounted: function () {
         console.log("running");
-		this.getAllCategorias();
+		this.getAllCategoria();
 	},
 
 	methods: {
-		getAllCategorias: function () {
-            axios.get('http://localhost/paginaCrochetera/api/v1.php?action=readCat')
+		getAllCategoria: function () {
+            axios.get('http://localhost/paginaCrochetera/api/categorias.api.php?action=read')
             .then(function (response) {
-                console.log(response);
+                console.log(response.data.categoria);
                 if (response.data.error) {
-                    app.errorMessage = response.data.message;
+                    Categorias.errorMessage = response.data.message;
                 } else {
-                    app.categorias = response.data.categorias;
+                    Categorias.categoria = response.data.categoria;
                 }
             })
         },
