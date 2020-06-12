@@ -23,4 +23,5 @@
 	// Print json encoded data
 	echo json_encode($res);
 	die();
+	
 ?>
