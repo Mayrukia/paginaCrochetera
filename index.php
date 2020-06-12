@@ -74,7 +74,7 @@
 	<!-- Mi Presentacion fin-->
 	<!-- Show Productos -->
   <section>
-  <div id="root">
+  <div id="app-categorias">
     <div class="container">
       <div class="row text-center">
         <p class="btn btn-success ml-2" v-for="categoria in categorias">
@@ -82,6 +82,8 @@
         </p>
       </div>
     </div>
+  </div>
+  <div id="root">
     <div class="row counters p-4">
       <div class="text-center row">
         <div v-for="producto in filtrados" class="card bg-dark ml-2">
