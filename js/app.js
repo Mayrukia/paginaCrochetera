@@ -3,15 +3,15 @@ var app = new Vue({
 	el: "#root",
 	data: {
     errorMessage: "",
-		successMessage: "",
-		productos: [],
-		filtrados:[],
+	successMessage: "",
+	productos: [],
+	filtrados:[],
     },
 
     mounted: function () {
         console.log("running");
         this.getAllProductos();
-				this.getAllCategorias();
+		this.getAllCategorias();
 	},
 
 	methods: {
@@ -26,17 +26,17 @@ var app = new Vue({
   			}
   		})
 	},
-		getAllCategorias: function () {
-			axios.get('http://localhost/paginaCrochetera/api/v3.php?action=readCat')
-			.then(function (response) {
-				console.log(response);
-				if (response.data.error) {
-					app.errorMessage = response.data.message;
-				} else {
-					app.categorias = response.data.productos;
-				}
-			})
-		},
+	getAllCategorias: function () {
+		axios.get('http://localhost/paginaCrochetera/api/v3.php?action=readCat')
+		.then(function (response) {
+			console.log(response);
+			if (response.data.error) {
+				app.errorMessage = response.data.message;
+			} else {
+				app.categorias = response.data.productos;
+			}
+		})
+	},
     }
 });
 Vue.config.devtools = true;
