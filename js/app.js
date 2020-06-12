@@ -12,7 +12,7 @@ var app = new Vue({
     mounted: function () {
         console.log("running");
         this.getAllProductos();
-				this.getAllCategorias();
+		this.getAllCategorias();
 	},
 
 	methods: {
