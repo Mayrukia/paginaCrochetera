@@ -12,7 +12,6 @@ var app = new Vue({
     mounted: function () {
         console.log("running");
         this.getAllProductos();
-		this.getAllCategorias();
 	},
 
 	methods: {
@@ -22,8 +21,8 @@ var app = new Vue({
   			if (response.data.error) {
   				app.errorMessage = response.data.message;
   			} else {
-  				app.productos = response.data.productos;
-  				app.filtrados = response.data.productos;
+  				app.productos = response.data.producto;
+  				app.filtrados = response.data.producto;
   			}
   		})
 	},
