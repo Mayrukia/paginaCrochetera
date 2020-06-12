@@ -17,7 +17,7 @@ var app = new Vue({
 
 	methods: {
 		getAllProductos: function () {
-  		axios.get('http://localhost/paginaCrochetera/api/v3.php?action=read')
+  		axios.get('http://localhost/paginaCrochetera/api/v1.php?action=read')
   		.then(function (response) {
   			if (response.data.error) {
   				app.errorMessage = response.data.message;
@@ -92,7 +92,7 @@ var app = new Vue({
 	// CATEGORIAS
 
 	getAllCategorias: function () {
-		axios.get('http://localhost/paginaCrochetera/api/v3.php?action=readCat')
+		axios.get('http://localhost/paginaCrochetera/api/v1.php?action=readCat')
 		.then(function (response) {
 			if (response.data.error) {
 				app.errorMessage = response.data.message;

@@ -35,11 +35,7 @@
               <li><a href="#">Drop Down 1</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="#">Deep Drop Down 1</a></li
                 </ul>
               </li>
               <li><a href="#">Drop Down 3</a></li>
@@ -79,19 +75,19 @@
 	<!-- Mi Presentacion fin-->
 	<!-- Show Productos -->
   <section>
-  <div class="" id="root">
+  <div id="root">
     <div class="container">
-      <div class="row" v-for="categoria in categorias">
-        <p class="btn btn-success">
+      <div class="row text-center">
+        <p class="btn btn-success ml-2" v-for="categoria in categorias">
         {{categoria.nombre}}
-        </p
+        </p>
       </div>
     </div>
     <div class="row counters p-4">
-      <div class="col-lg-3 col-6 text-center">
-        <div v-for="producto in filtrados" class="card bg-dark">
+      <div class="text-center row">
+        <div v-for="producto in filtrados" class="card bg-dark ml-2">
           <div class="card-title">{{producto.nombre}}</div>
-          <img :src="`img/${producto.id}.jpg`" alt="" height="60">
+          <img :src="`img/${producto.id}.jpg`" class="" height="100px" width="100px">
           <div class="card-footer">Precio {{producto.precio}}</div>
         </div>
       </div>
