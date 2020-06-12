@@ -4,7 +4,7 @@
 	// Database connection
 	$pdo= new PDO('mysql:host=localhost;dbname=todoCrocheting','root','');
     $pdo->exec("set names utf8");
-    
+
 	// Read data from database
 	$action = 'read';
 
@@ -12,19 +12,16 @@
 		$action = $_GET['action'];
 	}
 
+	// Parte de las Categorias
 	if ($action == 'read') {
-		$tabla = $pdo->prepare('SELECT * FROM producto');
+		$tabla = $pdo->prepare('SELECT * FROM categoria');
     	$tabla->execute();
-		
-
-    	$productos = $tabla->fetchAll(PDO::FETCH_ASSOC);		
-		$res['productos'] = $productos;
-
+    	$categoria = $tabla->fetchAll(PDO::FETCH_ASSOC);
+			$res['categoria'] = $categoria;
 	}
 
-
-	$connect = null;
 	// Print json encoded data
 	echo json_encode($res);
 	die();
+	
 ?>
