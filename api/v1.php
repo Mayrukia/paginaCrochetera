@@ -14,10 +14,10 @@
 
 	// Parte de las Categorias
 	if ($action == 'read') {
-		$tabla = $pdo->prepare('SELECT * FROM categoria');
+		$tabla = $pdo->prepare('SELECT * FROM producto');
     	$tabla->execute();
-    	$categorias = $tabla->fetchAll(PDO::FETCH_ASSOC);
-			$res['categorias'] = $categorias;
+    	$producto = $tabla->fetchAll(PDO::FETCH_ASSOC);
+			$res['producto'] = $producto;
 	}
 
 	// Print json encoded data

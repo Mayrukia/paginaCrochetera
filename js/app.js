@@ -12,18 +12,17 @@ var app = new Vue({
     mounted: function () {
         console.log("running");
         this.getAllProductos();
-		this.getAllCategorias();
 	},
 
 	methods: {
 		getAllProductos: function () {
-  		axios.get('http://localhost/paginaCrochetera/api/v3.php?action=read')
+  		axios.get('http://localhost/paginaCrochetera/api/v1.php?action=read')
   		.then(function (response) {
   			if (response.data.error) {
   				app.errorMessage = response.data.message;
   			} else {
-  				app.productos = response.data.productos;
-  				app.filtrados = response.data.productos;
+  				app.productos = response.data.producto;
+  				app.filtrados = response.data.producto;
   			}
   		})
 	},
