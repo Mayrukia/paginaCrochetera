@@ -20,6 +20,14 @@
 			$res['categoria'] = $categoria;
 	}
 
+	// Parte de las Categorias
+	if ($action == 'readsub') {
+		$tabla = $pdo->prepare('SELECT * FROM subcategoria');
+    	$tabla->execute();
+    	$subcategoria = $tabla->fetchAll(PDO::FETCH_ASSOC);
+			$res['subcategoria'] = $subcategoria;
+	}
+
 	// Print json encoded data
 	echo json_encode($res);
 	die();
