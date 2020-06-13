@@ -5,12 +5,13 @@ var Categorias = new Vue({
         errorMessage: "",
         successMessage: "",
         categoria: [],
-        algo: "algo"
+        subcategoria: [],
     },
 
     mounted: function () {
         console.log("running");
 		this.getAllCategoria();
+		this.getAllSubcategoria();
 	},
 
 	methods: {
@@ -22,6 +23,17 @@ var Categorias = new Vue({
                     Categorias.errorMessage = response.data.message;
                 } else {
                     Categorias.categoria = response.data.categoria;
+                }
+            })
+        },
+        getAllSubcategoria: function () {
+            axios.get('http://localhost/paginaCrochetera/api/categorias.api.php?action=readsub')
+            .then(function (response) {
+                console.log(response.data.categoria);
+                if (response.data.error) {
+                    Categorias.errorMessage = response.data.message;
+                } else {
+                    Categorias.subcategoria = response.data.subcategoria;
                 }
             })
         },

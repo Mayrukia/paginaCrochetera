@@ -35,7 +35,7 @@
               <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
                 <ul>
-                  <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
+                  <li v-for="subitem in subcategoria"><a href="#">{{subitem.nombre}}</a></li>
                 </ul>
               </li>
 
