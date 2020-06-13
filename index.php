@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -11,7 +13,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 <!-- carpeta de img    /img -->
-	<title></title>
 </head>
 <body>
  <!-- ======= Header ======= -->
@@ -31,15 +32,13 @@
           <li><a href="#team">Equipo</a></li>
           <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
+              <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li
+                  <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+
             </ul>
           </li>
           <li><a href="#contact">Contactos</a></li>
@@ -48,9 +47,7 @@
     </div>
   </header>
   <!-- End Header -->
-
 	<!-- Navbar fin -->
-
 	<!-- Slider -->
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -62,7 +59,6 @@
   </section>
   <!-- End Hero Section -->
 	<!-- Slider fin-->
-
 	<!-- Mi Presentacion -->
 	<div class="container text-center">
     <div class="">
@@ -74,21 +70,19 @@
 	<!-- Mi Presentacion fin-->
 	<!-- Show Productos -->
   <section>
-  <div id="app-categorias">
+  <div class="" id="root">
     <div class="container">
-      <div class="row text-center">
-        <p class="btn btn-success ml-2" v-for="categoria in categorias">
+      <div class="row" v-for="categoria in categorias">
+        <p class="btn btn-success">
         {{categoria.nombre}}
         </p>
       </div>
     </div>
-  </div>
-  <div id="root">
     <div class="row counters p-4">
-      <div class="text-center row">
-        <div v-for="producto in filtrados" class="card bg-dark ml-2">
+      <div class="col-lg-3 col-6 text-center">
+        <div v-for="producto in filtrados" class="card bg-dark">
           <div class="card-title">{{producto.nombre}}</div>
-          <img :src="`img/${producto.id}.jpg`" class="" height="100px" width="100px">
+          <img :src="`img/${producto.id}.jpg`" alt="" height="60">
           <div class="card-footer">Precio {{producto.precio}}</div>
         </div>
       </div>
@@ -120,7 +114,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/categorias.vue.js"></script>
 </body>
-
-
 </html>
