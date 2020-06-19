@@ -6,6 +6,10 @@ var Categorias = new Vue({
         successMessage: "",
         categoria: [],
         subcategoria: [],
+        catnav: {
+            nomcat: '',
+            idcategoria: 0, 
+        },
     },
 
     mounted: function () {

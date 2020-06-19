@@ -1,0 +1,73 @@
+.contenedor {
+    background-color: #fff;
+    width: 80%;
+    padding: 5% 0;
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+#categorias {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+@media only screen and (min-width: 500px) {
+    #categorias {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+#categorias .item {
+    height: 300px;
+    background-color: grey;
+    text-align: center;
+    position: relative;
+}
+
+#categorias .item:nth-child(1) {
+    background-image: url("../../img/Accesorios/20582473_1100489023385926_7840483083978539008_n.jpg");
+}
+#categorias .item:nth-child(2) {
+    background-image: url("../../img/Accesorios/96536418_289555405401958_1502135516549405933_n.jpg");
+}
+#categorias .item:nth-child(3) {
+    background-image: url("../../img/Accesorios/97569797_199106411077763_3423218505855134091_n.jpg");
+}
+#categorias .item:nth-child(4) {
+    background-image: url("../../img/Accesorios/97926023_104775607860418_8940685078140113040_n_002.jpg");
+}
+#categorias .item:nth-child(5) {
+    background-image: url("../../img/Accesorios/20582473_1100489023385926_7840483083978539008_n.jpg");
+}
+
+#categorias .item .textos {
+    position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   /* width: 50%; */
+   height: 50%;
+   margin: auto;
+}
+
+@media only screen and (min-width: 500px) {
+    #categorias .item .textos {
+        /* margin-top: 20%; */
+    }
+}
+
+#categorias .item h2{
+    color: #fff;
+    width: 100%;
+}
+
+#categorias .item h3{
+    color: #ccc;
+    width: 100%;
+}
