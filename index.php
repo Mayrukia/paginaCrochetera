@@ -15,7 +15,7 @@
 </head>
 <body>
  <!-- ======= Header ======= -->
-  <header id="header">
+  <header id="">
     <div class="container">
       <div id="logo" class="pull-left">
         <a href="#hero"><img src="assets/img/logo.png" alt=""></a>
@@ -76,7 +76,7 @@
 
   <!-- Show Categorías -->
 
-  <section id="" class="contenedor">
+  <section id="header" class="contenedor">
       <div class="" v-for="cat in categoria">
         <div class="item"><div class="textos"><h2>{{cat.nombre}}</h2><h3>{{cat.nombre}}</h3></div></div>
       </div>
@@ -87,6 +87,10 @@
 	<!-- Show Productos -->
 	<!-- Show Productos End-->
 	<!-- Redes -->
+  <div class="container">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
 	<!-- Redes End-->
 	<!-- footer -->
 	<footer id="footer">
