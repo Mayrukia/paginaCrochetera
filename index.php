@@ -76,9 +76,9 @@
 
   <!-- Show Categorías -->
 
-  <section id="" class="contenedor">
+  <section id="header" class="contenedor">
       <div class="" v-for="cat in categoria">
-        <div class="item"><div class="textos"><h2>{{cat.nombre}}</h2><h3>{{cat.nombre}}</h3></div></div>
+        <div class="item"><div class="textos"><h2>{{cat.nombre}}</h2><h3>{{cat.descripcion}}</h3></div></div>
       </div>
   </section>
 
@@ -94,7 +94,7 @@
 	<!-- Redes End-->
 	<!-- footer -->
 	<footer id="footer">
-			<div class="row bg-dark">
+			<div class="container bg-dark">
           <p class="text-center">Contáctanos!</p>
 			</div>
 	</footer>
