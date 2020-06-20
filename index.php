@@ -52,7 +52,7 @@
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
-  </header>
+    </header>
   <!-- End Header -->
 
 	<!-- Navbar fin -->
@@ -70,45 +70,21 @@
 	<!-- Slider fin-->
 
 	<!-- Mi Presentacion -->
-	
+
 	<!-- Mi Presentacion fin-->
 
 
   <!-- Show Categorías -->
 
-  <section id="categorias" class="contenedor">
-      <div class="item"><div class="textos"><h2>Item 1</h2><h3>Descripción de la categoría</h3></div></div>
-      <div class="item"><div class="textos"><h2>Item 2</h2><h3>Descripción de la categoría</h3></div></div>
-      <div class="item"><div class="textos"><h2>Item 3</h2><h3>Descripción de la categoría</h3></div></div>
-      <div class="item"><div class="textos"><h2>Item 4</h2><h3>Descripción de la categoría</h3></div></div>
-      <div class="item"><div class="textos"><h2>Item 5</h2><h3>Descripción de la categoría</h3></div></div>
-      <div class="item"><div class="textos"><h2>Item 6</h2><h3>Descripción de la categoría</h3></div></div>
+  <section id="" class="contenedor">
+      <div class="" v-for="cat in categoria">
+        <div class="item"><div class="textos"><h2>{{cat.nombre}}</h2><h3>{{cat.nombre}}</h3></div></div>
+      </div>
   </section>
-
 
   <!-- Fin Show Categorías -->
 
 	<!-- Show Productos -->
-  <section>
-  <div class="" id="root">
-    <div class="container">
-      <div class="row" v-for="categoria in categorias">
-        <p class="btn btn-success">
-        {{categoria.nombre}}
-        </p>
-      </div>
-    </div>
-    <div class="row counters p-4">
-      <div class="col-lg-3 col-6 text-center">
-        <div v-for="producto in filtrados" class="card bg-dark">
-          <div class="card-title">{{producto.nombre}}</div>
-          <img :src="`img/${producto.id}.jpg`" alt="" height="60">
-          <div class="card-footer">Precio {{producto.precio}}</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
 	<!-- Show Productos End-->
 	<!-- Redes -->
 	<!-- Redes End-->
