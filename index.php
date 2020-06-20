@@ -76,7 +76,11 @@
 
   <!-- Show Categorías -->
 
+<<<<<<< HEAD
   <section id="header" class="contenedor">
+=======
+  <section id="" class="contenedor">
+>>>>>>> 0f9d27da53e8ba9bdab0d1fbcf15a6b54e7b2c0f
       <div class="" v-for="cat in categoria">
         <div class="item"><div class="textos"><h2>{{cat.nombre}}</h2><h3>{{cat.nombre}}</h3></div></div>
       </div>
