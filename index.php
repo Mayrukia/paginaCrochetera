@@ -97,20 +97,46 @@
 	<!-- Show Productos End-->
 	<!-- Redes -->
 	<!-- Redes End-->
-	<!-- footer -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-6 text-center ">
-					<p></p>
-          <br>
-        </div>
-				<div class="col-md-12 bg-dark">
-          <p class="text-center">noseve</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+
+	<!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        
+        <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Calle ....<br>La Plata BSAS. </p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>mayru...@hotmail.com</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+54 221 0000 000 </p>
+              </div>
+            </div>
+      </div>
+      <div class="credits">
+        <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+             </div>
+             &copy; PaginaCrochetera
+      </div>
+    </div>
+  </footer>
 	<!-- footer fin-->
   <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
