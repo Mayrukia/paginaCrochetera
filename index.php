@@ -15,21 +15,19 @@
 </head>
 <body>
 <div id="root">
- <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="assets/img/logo.png" alt=""></a>
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!--<h1><a href="#hero">Regna</a></h1>-->
+<!--        <a href="#hero"><img src="./img/web/logo.png" width="200px" height="100px"></a>
+ -->        <!-- Uncomment below if you prefer to use a text logo -->
+        	<h1><a class="text-capitalize border-bottom text-danger" href="#hero">Todo Crocheting</a></h1>
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#about">Sobre nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="productos.php">Productos</a></li>
-          <li class="menu-has-children"><a href="#team">Equipo</a>
+          <li><a href="#about">Ofertas</a></li>
+          <li class="menu-has-children"><a href="#team">Categorias</a>
             <ul>
               <li v-for="item in categorias"><a href="#">{{item.nombre}}</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
@@ -39,14 +37,11 @@
               </li>
             </ul>
           </li>
-          <li class="menu-has-children"><a href="">Categorías</a>
-            <ul>
-              <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contactos</a></li>
+          <li><a href="#contact">Favoritos</a></li>
+          <li><a href="#services">Mis Compras</a></li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
+   <!-- #nav-menu-container -->
     </div>
     </header>
   <!-- End Header -->
@@ -62,15 +57,11 @@
       <a href="#galeria" class="btn-get-started">Empezar</a>
     </div>
 </section>
+
 <!-- End Hero Section -->
 <!-- Slider fin-->
-
 <!-- Mi Presentacion -->
-
-
 <!-- Mi Presentacion fin-->
-
-
 <!-- Show Categorías -->
 
 <section id="categorias" class="contenedor">
@@ -84,26 +75,27 @@
     </div>
 </section>
 
-  <!-- Fin Show Categorías -->
-
+<!-- Fin Show Categorías -->
 <!-- Show Productos -->
 <!-- Show Productos End-->
 <!-- Redes -->
 <!-- Redes End-->
 <!-- footer -->
+
 <div class="container">
 	<div class=" bg-secondary">
 		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, qui, quia! Accusamus facilis corporis, nihil, exercitationem similique vero tenetur itaque, expedita tempore sunt assumenda! Totam dolore provident tempora quas perferendis!</h1>
 	</div>
 </div>
+
 <!-- footer fin-->
-  <!-- JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="js/app.js"></script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/app.js"></script>
 </div>
 </body>
 </html>
