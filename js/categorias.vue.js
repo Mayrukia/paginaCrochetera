@@ -1,6 +1,6 @@
 var Categorias = new Vue({
 
-	el: "#header",
+	el: "#app",
 	data: {
         errorMessage: "",
         successMessage: "",
@@ -8,7 +8,7 @@ var Categorias = new Vue({
         subcategoria: [],
         catnav: {
             nomcat: '',
-            idcategoria: 0, 
+            idcategoria: 0,
         },
     },
 

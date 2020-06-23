@@ -16,8 +16,14 @@
 	if ($action == 'read') {
 		$tabla = $pdo->prepare('SELECT * FROM producto');
     	$tabla->execute();
-    	$producto = $tabla->fetchAll(PDO::FETCH_ASSOC);
-			$res['producto'] = $producto;
+    	$productos = $tabla->fetchAll(PDO::FETCH_ASSOC);
+			$res['productos'] = $productos;
+	}
+	if ($action == 'readCat') {
+		$tabla = $pdo->prepare('SELECT * FROM categoria');
+    	$tabla->execute();
+    	$categorias = $tabla->fetchAll(PDO::FETCH_ASSOC);
+			$res['categorias'] = $categorias;
 	}
 
 	// Print json encoded data

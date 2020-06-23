@@ -14,8 +14,9 @@
 
 </head>
 <body>
+<div id="root">
  <!-- ======= Header ======= -->
-  <header id="">
+  <header id="header">
     <div class="container">
       <div id="logo" class="pull-left">
         <a href="#hero"><img src="assets/img/logo.png" alt=""></a>
@@ -30,10 +31,10 @@
           <li><a href="productos.php">Productos</a></li>
           <li class="menu-has-children"><a href="#team">Equipo</a>
             <ul>
-              <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
+              <li v-for="item in categorias"><a href="#">{{item.nombre}}</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
                 <ul>
-                  <li v-for="subitem in subcategoria"><a href="#">{{subitem.nombre}}</a></li>
+                  <li v-for="subitem in categorias"><a href="#">{{subitem.nombre}}</a></li>
                 </ul>
               </li>
             </ul>
@@ -41,11 +42,6 @@
           <li class="menu-has-children"><a href="">Categorías</a>
             <ul>
               <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li v-for="subitem in subcategoria"><a href="#">{{subitem.nombre}}</a></li>
-                </ul>
-              </li>
             </ul>
           </li>
           <li><a href="#contact">Contactos</a></li>
@@ -71,13 +67,14 @@
 
 	<!-- Mi Presentacion -->
 
+
 	<!-- Mi Presentacion fin-->
 
 
   <!-- Show Categorías -->
 
-  <section id="header" class="contenedor">
-      <div class="" v-for="cat in categoria">
+  <section id="categorias" class="contenedor">
+      <div class="" v-for="cat in categorias">
         <div class="item"><div class="textos"><h2>{{cat.nombre}}</h2><h3>{{cat.descripcion}}</h3></div></div>
       </div>
   </section>
@@ -106,6 +103,6 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/categorias.vue.js"></script>
+</div>
 </body>
 </html>
