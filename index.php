@@ -55,47 +55,48 @@
 
 	<!-- Slider -->
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
+<section id="hero">
     <div class="hero-container">
       <h1>Bienvenidos a la pagina Crochetera </h1>
       <h2>volve</h2>
       <a href="#galeria" class="btn-get-started">Empezar</a>
     </div>
-  </section>
-  <!-- End Hero Section -->
-	<!-- Slider fin-->
+</section>
+<!-- End Hero Section -->
+<!-- Slider fin-->
 
-	<!-- Mi Presentacion -->
-
-
-	<!-- Mi Presentacion fin-->
+<!-- Mi Presentacion -->
 
 
-  <!-- Show Categorías -->
+<!-- Mi Presentacion fin-->
 
-  <section id="categorias" class="contenedor">
-      <div class="" v-for="cat in categorias">
-        <div class="item"><div class="textos"><h2>{{cat.nombre}}</h2><h3>{{cat.descripcion}}</h3></div></div>
-      </div>
-  </section>
+
+<!-- Show Categorías -->
+
+<section id="categorias" class="contenedor">
+    <div class="" v-for="cat in categorias">
+        <div class="item" v-bind:style="{ backgroundImage: 'url(./img/Accesorios/' + cat.id + '.jpg)' }">
+        	<div class="textos"><h2 class="mb-5 ">{{cat.nombre}}</h2>
+        		<button class="btn btn-success mt-5" type="button" name="button">Ver</button>
+        	</div>
+        </div>
+        </div>
+    </div>
+</section>
 
   <!-- Fin Show Categorías -->
 
-	<!-- Show Productos -->
-	<!-- Show Productos End-->
-	<!-- Redes -->
-  <div class="container">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
-	<!-- Redes End-->
-	<!-- footer -->
-	<footer id="footer">
-			<div class="container bg-dark">
-          <p class="text-center">Contáctanos!</p>
-			</div>
-	</footer>
-	<!-- footer fin-->
+<!-- Show Productos -->
+<!-- Show Productos End-->
+<!-- Redes -->
+<!-- Redes End-->
+<!-- footer -->
+<div class="container">
+	<div class=" bg-secondary">
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, qui, quia! Accusamus facilis corporis, nihil, exercitationem similique vero tenetur itaque, expedita tempore sunt assumenda! Totam dolore provident tempora quas perferendis!</h1>
+	</div>
+</div>
+<!-- footer fin-->
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>

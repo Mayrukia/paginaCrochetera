@@ -30,19 +30,19 @@
 }
 
 #categorias .item:nth-child(1) {
-    background-image: url("../../img/Accesorios/20582473_1100489023385926_7840483083978539008_n.jpg");
+    background-image: url("../../img/Accesorios/1.jpg");
 }
 #categorias .item:nth-child(2) {
-    background-image: url("../../img/Accesorios/96536418_289555405401958_1502135516549405933_n.jpg");
+    background-image: url("../../img/Accesorios/2.jpg");
 }
 #categorias .item:nth-child(3) {
-    background-image: url("../../img/Accesorios/97569797_199106411077763_3423218505855134091_n.jpg");
+    background-image: url("../../img/Accesorios/3.jpg");
 }
 #categorias .item:nth-child(4) {
-    background-image: url("../../img/Accesorios/97926023_104775607860418_8940685078140113040_n_002.jpg");
+    background-image: url("../../img/Accesorios/4.jpg");
 }
 #categorias .item:nth-child(5) {
-    background-image: url("../../img/Accesorios/20582473_1100489023385926_7840483083978539008_n.jpg");
+    background-image: url("../../img/Accesorios/5.jpg");
 }
 
 #categorias .item .textos {
