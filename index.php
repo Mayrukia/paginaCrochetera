@@ -51,6 +51,7 @@
     </header>
   <!-- End Header -->
 
+
 	<!-- Navbar fin -->
 
 	<!-- Slider -->
@@ -69,13 +70,12 @@
 <!-- Mi Presentacion fin-->
 <!-- Show Categorías -->
 
-<section id="categorias" class="contenedor">
+<section id="categorias" class="contenedor bg-success">
     <div class="" v-for="cat in categorias">
-        <div class="item" v-bind:style="{ backgroundImage: 'url(./img/Accesorios/' + cat.id + '.jpg)' }">
+        <div class="item" v-bind:style="{ backgroundImage: 'url(./img/Web/' + cat.id + '.jpg)' }">
         	<div class="textos"><h2 class="mb-5 ">{{cat.nombre}}</h2>
-        		<button class="btn btn-success mt-5" type="button" name="button">Ver</button>
+        		<button class="btn btn-success mt-5" type="button" name="button">Consultar</button>
         	</div>
-        </div>
         </div>
     </div>
 </section>
@@ -86,15 +86,41 @@
 <!-- Redes -->
 <!-- Redes End-->
 <!-- footer -->
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
 
-<div class="container">
-	<div class=" bg-secondary">
-		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, qui, quia! Accusamus facilis corporis, nihil, exercitationem similique vero tenetur itaque, expedita tempore sunt assumenda! Totam dolore provident tempora quas perferendis!</h1>
-	</div>
+        <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Calle ....<br>La Plata BSAS. </p>
+              </div>
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>mayru...@hotmail.com</p>
+              </div>
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+54 221 0000 000 </p>
+              </div>
+            </div>
+      </div>
+      <div class="credits">
+        <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+             </div>
+             &copy; PaginaCrochetera
+      </div>
+    </div>
+  </footer>
 </div>
-
-
-<!-- footer fin-->
 <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -102,6 +128,5 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/app.js"></script>
-</div>
 </body>
 </html>
