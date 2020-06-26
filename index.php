@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Todo Crocheting</title>
-  <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-  <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/vendor/venobox/venobox.css">
-  <!-- Template Main CSS File -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/style2.css">
+<title>Todo Crocheting</title>
+<!-- Vendor CSS Files -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/vendor/venobox/venobox.css">
+<!-- Template Main CSS File -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style2.css">
 <!-- carpeta de img    /img -->
 
 </head>
 <body>
 <div id="root">
-  <!-- ======= Header ======= -->
+ <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
       <div id="logo" class="pull-left">
-<!--        <a href="#hero"><img src="./img/web/logo.png" width="200px" height="100px"></a>
- -->        <!-- Uncomment below if you prefer to use a text logo -->
-        	<h1><a class="text-capitalize border-bottom text-danger" href="#hero">Todo Crocheting</a></h1>
+        <a href="#hero"><img src="assets/img/logo.png" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#about">Ofertas</a></li>
-          <li class="menu-has-children"><a href="#team">Categorias</a>
+          <li><a href="#about">Sobre nosotros</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="productos.php">Productos</a></li>
+          <li class="menu-has-children"><a href="#team">Equipo</a>
             <ul>
               <li v-for="item in categorias"><a href="#">{{item.nombre}}</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
@@ -37,11 +39,14 @@
               </li>
             </ul>
           </li>
-          <li><a href="#contact">Favoritos</a></li>
-          <li><a href="#services">Mis Compras</a></li>
+          <li class="menu-has-children"><a href="">Categorías</a>
+            <ul>
+              <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contactos</a></li>
         </ul>
-      </nav>
-   <!-- #nav-menu-container -->
+      </nav><!-- #nav-menu-container -->
     </div>
     </header>
   <!-- End Header -->
@@ -87,6 +92,7 @@
 		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, qui, quia! Accusamus facilis corporis, nihil, exercitationem similique vero tenetur itaque, expedita tempore sunt assumenda! Totam dolore provident tempora quas perferendis!</h1>
 	</div>
 </div>
+
 
 <!-- footer fin-->
 <!-- JS, Popper.js, and jQuery -->
