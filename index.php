@@ -15,62 +15,7 @@
 </head>
 <body>
 <div id="root">
- <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-      <div id="logo" class="pull-left">
-        <a href="#hero"><img src="assets/img/logo.png" alt=""></a>
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!--<h1><a href="#hero">Regna</a></h1>-->
-      </div>
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#about">Sobre nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="productos.php">Productos</a></li>
-          <li class="menu-has-children"><a href="#team">Equipo</a>
-            <ul>
-              <li v-for="item in categorias"><a href="#">{{item.nombre}}</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li v-for="subitem in categorias"><a href="#">{{subitem.nombre}}</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-has-children"><a href="">Categorías</a>
-            <ul>
-              <li v-for="item in categoria"><a href="#">{{item.nombre}}</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contactos</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-    </header>
-  <!-- End Header -->
-
-
-	<!-- Navbar fin -->
-
-	<!-- Slider -->
-  <!-- ======= Hero Section ======= -->
-<section id="hero">
-    <div class="hero-container">
-      <h1>Bienvenidos a la pagina Crochetera </h1>
-      <h2>volve</h2>
-      <a href="#galeria" class="btn-get-started">Empezar</a>
-    </div>
-</section>
-
-<!-- End Hero Section -->
-<!-- Slider fin-->
-<!-- Mi Presentacion -->
-<!-- Mi Presentacion fin-->
-<!-- Show Categorías -->
-
-<section id="categorias" class="contenedor bg-success">
+<section id="categorias" class="contenedor">
     <div class="" v-for="cat in categorias">
         <div class="item" v-bind:style="{ backgroundImage: 'url(./img/Web/' + cat.id + '.jpg)' }">
         	<div class="textos"><h2 class="mb-5 ">{{cat.nombre}}</h2>
@@ -79,47 +24,6 @@
         </div>
     </div>
 </section>
-
-<!-- Fin Show Categorías -->
-<!-- Show Productos -->
-<!-- Show Productos End-->
-<!-- Redes -->
-<!-- Redes End-->
-<!-- footer -->
-<footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-      </div>
-    </div>
-    <div class="container">
-      <div class="copyright">
-
-        <div class="info">
-              <div>
-                <i class="fa fa-map-marker"></i>
-                <p>Calle ....<br>La Plata BSAS. </p>
-              </div>
-              <div>
-                <i class="fa fa-envelope"></i>
-                <p>mayru...@hotmail.com</p>
-              </div>
-              <div>
-                <i class="fa fa-phone"></i>
-                <p>+54 221 0000 000 </p>
-              </div>
-            </div>
-      </div>
-      <div class="credits">
-        <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-             </div>
-             &copy; PaginaCrochetera
-      </div>
-    </div>
-  </footer>
 </div>
 <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
