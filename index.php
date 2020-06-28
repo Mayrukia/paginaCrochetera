@@ -20,14 +20,14 @@
 <div id="root">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Mi web</a>
+  <nav class="navbar navbar-expand-lg bg-faded">
+  <a class="navbar-brand" href="#">Todo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto ">
       <li class="nav-item active">
         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
       </li>
@@ -44,20 +44,18 @@
         <a class="nav-link" href="#">Sobre mi <span class="sr-only">(current)</span></a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
-	<!-- Navbar fin -->
-
+<!-- Navbar fin -->
 <!-- Slider -->
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container">
       <h1>Bienvenidos a la pagina Crochetera </h1>
-      <h2>volve</h2>
       <a href="#galeria" class="btn-get-started">Empezar</a>
     </div>
 </section>
@@ -65,21 +63,49 @@
 
 
 <!-- Slider fin-->
+<div class="container p-2">
+  <div class="bg-success col-md-12 text-center">
+    <br>
+  </div>
+</div>
 <!-- Mi Presentacion -->>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <p class="text-right">--- by. Mayra</p>
+    </div>
+    <div class="col-6">
+      <img src="./img/Accesorios/2.jpg" width="500px" height="300px">
+    </div>
+  </div>
+</div>
 <!-- Mi Presentacion fin-->
+  <div class="container p-2">
+    <div class="bg-success col-md-12 text-center">
+      <br>
+    </div>
+  </div>
 <!-- Show Categorías -->
 
 <section id="categorias" class="contenedor">
     <div class="" v-for="cat in categorias">
         <div class="item" v-bind:style="{ backgroundImage: 'url(./img/Web/' + cat.id + '.jpg)' }">
         	<div class="textos"><h2 class="mb-5 ">{{cat.nombre}}</h2>
-        		<button class="btn btn-success mt-5" type="button" name="button">Consultar</button>
+        		<button class="btn btn-success mt-5" type="button" name="button"><i class="fa fa-eye" aria-hidden="true"></i>
+            Consultar</button>
         	</div>
         </div>
     </div>
 </section>
 
 <!-- Fin Show Categorías -->
+<div class="container p-2 text-center">
+  <div class="bg-success col-md-12">
+    <br>
+  </div>
+</div>
 <!-- Show Productos -->
 <!-- Show Productos End-->
 <!-- Redes -->

@@ -95,12 +95,9 @@
     margin: 0 10%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-
 }
 
 #categorias {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
